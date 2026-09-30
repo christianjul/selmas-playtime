@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff8e7">
+    <title>Selmas spilsamling</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="suite-header">
+        <div class="brand-mark" aria-hidden="true">S</div>
+        <div>
+          <p class="eyebrow">Hej Selma!</p>
+          <h1>Hvad vil du øve?</h1>
+        </div>
+        <div class="header-mascot" aria-hidden="true">•ᴗ•</div>
+      </header>
+
+      <main>
+        <section class="game-grid" aria-label="Vælg et spil">
+          <a class="game-tile math-tile" href="games/regning/">
+            <div class="tile-art math-art" aria-hidden="true">
+              <span>7</span>
+              <span>+</span>
+              <span>5</span>
+            </div>
+            <div class="tile-content">
+              <p class="tile-kicker"><span aria-hidden="true">✦</span> Tal og regning</p>
+              <h2>Regnemagi</h2>
+              <p>Plus, minus, gange og division</p>
+              <div class="tile-progress">
+                <span><span aria-hidden="true">★</span> <strong id="math-stars">0</strong> stjerner</span>
+                <span><span aria-hidden="true">▲</span> Niveau <strong id="math-level">1</strong></span>
+              </div>
+              <span class="play-button"><span aria-hidden="true">▶</span> Spil nu</span>
+            </div>
+          </a>
+
+          <a class="game-tile clock-tile" href="games/ur/">
+            <div class="tile-art clock-art" aria-hidden="true">
+              <div class="mini-clock">
+                <span class="mini-hour"></span>
+                <span class="mini-minute"></span>
+                <span class="mini-pin"></span>
+              </div>
+            </div>
+            <div class="tile-content">
+              <p class="tile-kicker"><span aria-hidden="true">◷</span> Tid og ure</p>
+              <h2>Hvad er klokken?</h2>
+              <p>Sæt viserne og aflæs uret</p>
+              <div class="tile-progress">
+                <span><span aria-hidden="true">★</span> <strong id="clock-stars">0</strong> stjerner</span>
+                <span><span aria-hidden="true">▲</span> Niveau <strong id="clock-level">1</strong></span>
+              </div>
+              <span class="play-button"><span aria-hidden="true">▶</span> Spil nu</span>
+            </div>
+          </a>
+        </section>
+
+        <section class="coming-soon">
+          <span aria-hidden="true">✨</span>
+          <p>Flere sjove spil er på vej!</p>
+        </section>
+      </main>
+
+      <footer>Selmas spilsamling</footer>
+    </div>
+  </body>
+</html>
