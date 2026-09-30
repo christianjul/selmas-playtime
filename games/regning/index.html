@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff8e7">
+    <title>Selmas regnetræning</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="app-header">
+        <div class="brand-mark" aria-hidden="true">S</div>
+        <div>
+          <p class="eyebrow">Hej Selma!</p>
+          <h1>Regnemagi</h1>
+        </div>
+        <button class="reset-button" id="reset-button" type="button">
+          <span aria-hidden="true">↻</span> Start forfra
+        </button>
+      </header>
+
+      <main>
+        <section class="progress-panel" aria-label="Dit fremskridt">
+          <div class="stat">
+            <span class="stat-icon" aria-hidden="true">★</span>
+            <div>
+              <span class="stat-label">Stjerner</span>
+              <strong id="star-count">0</strong>
+            </div>
+          </div>
+          <div class="stat">
+            <span class="stat-icon stat-icon-flame" aria-hidden="true">♥</span>
+            <div>
+              <span class="stat-label">I træk</span>
+              <strong id="streak-count">0</strong>
+            </div>
+          </div>
+          <div class="stat">
+            <span class="stat-icon stat-icon-level" aria-hidden="true">▲</span>
+            <div>
+              <span class="stat-label">Niveau</span>
+              <strong id="level-count">1</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="game-card" aria-labelledby="task-heading">
+          <div class="mascot" aria-hidden="true">
+            <span class="mascot-ear mascot-ear-left"></span>
+            <span class="mascot-ear mascot-ear-right"></span>
+            <span class="mascot-face">•ᴗ•</span>
+          </div>
+          <p class="task-label" id="task-heading"><span aria-hidden="true">?</span> Hvad giver det?</p>
+          <div class="equation" id="equation" aria-live="polite"></div>
+
+          <form id="answer-form" novalidate>
+            <label for="answer"><span aria-hidden="true">✎</span> Dit svar</label>
+            <div class="answer-row">
+              <input
+                id="answer"
+                name="answer"
+                type="text"
+                inputmode="none"
+                autocomplete="off"
+                readonly
+                required
+                aria-describedby="feedback"
+              >
+            </div>
+            <div class="number-pad" aria-label="Numerisk tastatur">
+              <button type="button" data-key="1">1</button>
+              <button type="button" data-key="2">2</button>
+              <button type="button" data-key="3">3</button>
+              <button type="button" data-key="4">4</button>
+              <button type="button" data-key="5">5</button>
+              <button type="button" data-key="6">6</button>
+              <button type="button" data-key="7">7</button>
+              <button type="button" data-key="8">8</button>
+              <button type="button" data-key="9">9</button>
+              <button class="delete-key" type="button" data-key="delete" aria-label="Slet sidste tal">⌫</button>
+              <button type="button" data-key="0">0</button>
+              <button class="check-button" type="submit" aria-label="Tjek svar">✓</button>
+            </div>
+          </form>
+
+          <div class="feedback" id="feedback" aria-live="assertive" role="status"></div>
+          <button class="next-button" id="next-button" type="button" hidden>
+            Næste opgave <span aria-hidden="true">→</span>
+          </button>
+          <div class="skip-controls" id="skip-controls">
+            <button type="button" data-difficulty="down"><span aria-hidden="true">↓</span> For svært</button>
+            <span class="skip-summary"><span aria-hidden="true">↷</span> Sprunget over: <span id="skip-count">0</span></span>
+            <button type="button" data-difficulty="up"><span aria-hidden="true">↑</span> For nemt</button>
+          </div>
+        </section>
+
+        <section class="encouragement" aria-label="Opmuntring">
+          <span aria-hidden="true">☀</span>
+          <p id="encouragement-text">Du er klar! Tag dig bare god tid.</p>
+        </section>
+      </main>
+
+      <footer>Øvelse gør regnemester ✨</footer>
+    </div>
+
+    <dialog id="reset-dialog">
+      <form method="dialog">
+        <div class="dialog-icon" aria-hidden="true">↻</div>
+        <h2>Vil du starte forfra?</h2>
+        <p>Alle stjerner og dit niveau bliver nulstillet.</p>
+        <div class="dialog-actions">
+          <button value="cancel"><span aria-hidden="true">←</span> Nej, behold dem</button>
+          <button class="confirm-reset" value="confirm"><span aria-hidden="true">↻</span> Ja, start forfra</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
