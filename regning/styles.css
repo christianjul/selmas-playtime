@@ -600,6 +600,22 @@ dialog p {
     grid-column: 1 / -1;
     grid-row: 2;
   }
+
+  .next-button:not([hidden]) {
+    position: fixed;
+    right: auto;
+    bottom: max(12px, env(safe-area-inset-bottom));
+    left: 50%;
+    width: calc(100% - 24px);
+    max-width: 520px;
+    margin: 0;
+    transform: translateX(-50%);
+    z-index: 30;
+  }
+
+  .next-button:not([hidden]):active {
+    transform: translate(-50%, 4px);
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

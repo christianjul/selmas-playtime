@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf7"/>
+      <stop offset="1" stop-color="#fff0ca"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1080" cy="90" r="125" fill="#7868e6" opacity="0.12"/>
+  <circle cx="85" cy="560" r="100" fill="#ffc857" opacity="0.42"/>
+  <rect x="82" y="72" width="88" height="88" rx="24" fill="#7868e6"/>
+  <text x="126" y="136" fill="#ffffff" font-family="Arial Rounded MT Bold, Arial, sans-serif" font-size="57" font-weight="700" text-anchor="middle">S</text>
+  <text x="202" y="109" fill="#ff7c70" font-family="Arial, sans-serif" font-size="23" font-weight="700" letter-spacing="3">SELMAS SPILSAMLING</text>
+  <text x="202" y="155" fill="#26345d" font-family="Arial Rounded MT Bold, Arial, sans-serif" font-size="51" font-weight="700">Hvad er klokken?</text>
+  <circle cx="600" cy="350" r="170" fill="#fffaf0" stroke="#ffffff" stroke-width="16"/>
+  <circle cx="600" cy="350" r="152" fill="none" stroke="#eeeaff" stroke-width="7"/>
+  <text x="600" y="224" fill="#26345d" font-family="Arial, sans-serif" font-size="29" font-weight="700" text-anchor="middle">12</text>
+  <text x="730" y="360" fill="#26345d" font-family="Arial, sans-serif" font-size="29" font-weight="700" text-anchor="middle">3</text>
+  <text x="600" y="492" fill="#26345d" font-family="Arial, sans-serif" font-size="29" font-weight="700" text-anchor="middle">6</text>
+  <text x="468" y="360" fill="#26345d" font-family="Arial, sans-serif" font-size="29" font-weight="700" text-anchor="middle">9</text>
+  <line x1="600" y1="350" x2="673" y2="304" stroke="#ff7c70" stroke-width="16" stroke-linecap="round"/>
+  <line x1="600" y1="350" x2="600" y2="230" stroke="#4d8fe8" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="600" cy="350" r="14" fill="#26345d" stroke="#ffffff" stroke-width="5"/>
+  <text x="600" y="579" fill="#6f7894" font-family="Arial, sans-serif" font-size="27" font-weight="700" text-anchor="middle">Sæt viserne · aflæs uret</text>
+</svg>
